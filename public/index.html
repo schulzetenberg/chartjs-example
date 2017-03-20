@@ -1,0 +1,60 @@
+<html ng-app="mainApp">
+  <head>
+    <title> Angular chart.js </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body ng-controller="mainCtrl">
+    <h3> Line </h3>
+    <div id="canvas-container">
+      <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-series="series"
+       chart-options="options" chart-dataset-override="datasetOverride" chart-click="onClick"></canvas>
+    </div>
+
+    <h3> Bar </h3>
+    <div id="canvas-container">
+      <canvas id="bar" class="chart chart-bar"chart-data="data" chart-labels="labels" chart-series="series"></canvas>
+    </div>
+
+    <h3> Doughnut </h3>
+    <div id="canvas-container">
+      <canvas id="doughnut" class="chart chart-doughnut" chart-data="data" chart-labels="labels"></canvas>
+    </div>
+
+    <h3> Radar </h3>
+    <div id="canvas-container">
+      <canvas id="radar" class="chart chart-radar" chart-data="data" chart-options="options" chart-labels="labels"></canvas>
+    </div>
+
+    <h3> Pie </h3>
+    <div id="canvas-container">
+      <canvas id="pie" class="chart chart-pie" chart-data="data" chart-labels="labels" chart-options="pieOpts"></canvas>
+    </div>
+
+    <h3> Polar Area </h3>
+    <div id="canvas-container">
+      <canvas id="polar-area" class="chart chart-polar-area" chart-data="data" chart-labels="labels" chart-options="options"></canvas>
+    </div>
+
+    <h3> Horizontal Bar </h3>
+    <div id="canvas-container">
+      <canvas id="base" class="chart-horizontal-bar" chart-data="data" chart-labels="labels" ></canvas>
+    </div>
+
+    <h3> Bubble </h3>
+    <div id="canvas-container">
+      <canvas id="base" class="chart-bubble" chart-data="bubbleData" chart-series="series"></canvas>
+    </div>
+
+    <h3> Dynamic </h3>
+    <div id="canvas-container">
+      <canvas id="base" class="chart-base" chart-type="type" chart-data="data" chart-labels="labels"></canvas>
+    </div>
+
+    <script src="angular/angular.min.js"></script>
+    <script src="chart.js/dist/Chart.min.js"></script>
+    <script src="angular-chart.js/dist/angular-chart.min.js"></script>
+    <script src="client.js"></script>
+
+  </body>
+</html>
